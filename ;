@@ -1,0 +1,42 @@
+import { StyleSheet, Platform } from "react-native";
+
+const styles = StyleSheet.create({
+  container: {
+    marginHorizontal: 20,
+    marginVertical: 10,
+    backgroundColor: "white",
+    padding: 20,
+    paddingVertical: 15,
+    shadowColor: Platform.OS === "android" ? "rgba(0,0,0,0.4)" : "#000",
+    shadowOffset: {
+      height: 2,
+      width: 0,
+    },
+    shadowRadius: 4,
+    shadowOpacity: 0.3,
+    borderCurve: "continuous",
+    borderRadius: 20,
+    borderWidth: 0.5,
+    borderColor: "rgba(0,0,0,0.4)",
+  },
+  avatar: {
+    height: 50,
+    width: 50,
+    borderCurve: "continuous",
+    borderRadius: 20,
+  },
+
+  userName: {
+    fontSize: 14,
+  },
+  row: {
+    flexDirection: "row",
+    backgroundColor: "#0faf",
+  },
+  vstack: {
+    gap: 4,
+    marginStart: 10,
+  },
+});
+
+export default styles;
